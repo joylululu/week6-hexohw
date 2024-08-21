@@ -1,0 +1,15 @@
+.search {
+  &-form {
+    position: relative;
+  }
+  &-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) !important;
+  }
+}
+
+.navbar-nav {
+  margin-left: auto;
+}

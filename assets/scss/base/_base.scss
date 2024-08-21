@@ -1,0 +1,41 @@
+body {
+  font-family: "Newsreader", "Noto Serif TC", serif;
+  background-color: $primary-100;
+  color: $gray-500;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.1em;
+  margin-bottom: 0px;
+}
+
+p {
+  letter-spacing: 0.05em;
+  margin-bottom: 0px;
+}
+
+.bi {
+  font-size: 1rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 1.25rem;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}

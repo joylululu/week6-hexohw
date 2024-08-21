@@ -1,0 +1,181 @@
+//banner
+.banner {
+  &-picture {
+    background-image: url("https://i.imgur.com/shIf9ta.png");
+    height: 551px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    @include media-breakpoint-up(lg) {
+      background-image: url("https://i.imgur.com/DdnYaqE.png");
+      height: 621px;
+    }
+  }
+
+  &-title {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-50%);
+    @include media-breakpoint-up(lg) {
+      top: 50%;
+      bottom: auto;
+      text-align: left;
+    }
+  }
+  &-lead {
+    font-size: 1.75rem;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 2.5rem;
+    }
+  }
+  &-btn {
+    background-color: $secondary-200;
+    color: $white;
+  }
+  &-btn:hover {
+    background-color: $secondary-300;
+    color: $white;
+  }
+}
+
+//popular topics
+.card {
+  &-topic {
+    position: relative;
+  }
+  &-topic-img {
+    border-radius: 20px 0 20px 0;
+    overflow: hidden;
+    width: 100%;
+  }
+  &-topic-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+  }
+}
+
+//selected article
+
+.article {
+  &-icon {
+    padding: 0.25rem 1rem;
+  }
+
+  &-label {
+    padding: 0.25rem 0.5rem;
+    background-color: $primary-300;
+    color: $primary-400;
+    border-radius: 0.25rem;
+    font-weight: 700;
+  }
+}
+
+//promotions
+.hito-content {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: none;
+    width: 217px;
+    height: 76px;
+    background: url(/assets/images/bg-1.png);
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    display: block;
+    width: 160px;
+    height: 104px;
+    background: url(/assets/images/bg-2-sm.png);
+    @include media-breakpoint-up(lg) {
+      right: 0px;
+      bottom: 0;
+      width: 300px;
+      height: 191px;
+      background: url(/assets/images/bg-2.png);
+    }
+  }
+}
+
+//hots
+.hots {
+  &-label {
+    padding: 0.25rem 0.5rem;
+    background-color: $primary-300;
+    color: $primary-400;
+    border-radius: 0.25rem;
+    font-weight: 700;
+  }
+
+  &-radius-start {
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+  }
+  &-radius-end {
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+  }
+}
+
+//Life
+.separator {
+  flex-grow: 0;
+  height: 1px;
+  background-color: $dark;
+  width: 5rem;
+}
+
+.life {
+  &-headline {
+    font-size: 2.5rem;
+    color: $primary-400;
+    @include media-breakpoint-up(lg) {
+      font-size: 3.25rem;
+    }
+  }
+
+  &-card {
+    background-color: $primary-100;
+  }
+}
+
+//Projects
+.project {
+  &-btn {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    transform: translate(0, -50%);
+  }
+  &-label {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+    bottom: 0;
+  }
+  &-text {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+  }
+
+  &-icon {
+    margin-left: auto;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+  }
+}

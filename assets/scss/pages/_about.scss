@@ -1,0 +1,18 @@
+//banner
+.about {
+  &-picture {
+    background-image: url("https://i.imgur.com/DhZsBMx.png");
+    height: 551px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    @include media-breakpoint-up(lg) {
+      background-image: url("https://i.imgur.com/p94yriV.png");
+      height: 621px;
+    }
+  }
+
+  &-blog-img {
+    width: 49%;
+  }
+}
